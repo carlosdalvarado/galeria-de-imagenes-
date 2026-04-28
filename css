@@ -1,0 +1,22 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 15px; /* Margen entre imágenes */
+}
+ 
+.gallery-container img {
+  width: 100%;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease; /* Efecto suave */
+}
+ 
+.gallery-container img:hover {
+  transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+ 
+/* Responsividad */
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr; /* 1 columna en celulares */
+  }
+}
